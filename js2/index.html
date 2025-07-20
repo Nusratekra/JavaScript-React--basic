@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> alert("internal js inside head");</script>
+</head>
+<body onload="alert('inline JS')">
+    <script>
+        alert("How to show output on JS"); /*to show any alert message,alert() in a function after function use ; */
+        document.write("<h1>Use to show output</h1><br> <u>inside we can use html's formatting tags.</u><br>");//it will show in wabpage
+        console.log("Use to show output"); //it will show in inspect of the site
+        //Homework print name of the programming langauge I have learn
+        document.write("C<br>C++<br>Java<br>Python<br>HTML<br>CSS");
+        //JS code placeing (inline js,internal js,external js) 
+        //<body onload="alert('inline JS')"> = inline js
+        //alert("internal js inside head")=internal js or at the last of body tag we will use
+        //<script src="External js.js"> = external js
+        
+        //variable decleration
+        var name="First Variable"
+        document.write(name, "<br>");
+        name="new name"
+        document.write(name);
+        /* can be "var name="First Variable"
+        document.write(name, "<br>");
+         var name="new name"
+        document.write(name);"*/
+        //always try to declare the variable using let or const,not var
+        let fullName = "Prarona"
+        console.log(fullName);
+        fullName = "Ekra"
+        console.log(fullName); //using var keyword it can be redeclare
+        // while use let keywoed it will change the variable's value and cannot redeclare same name
+        const lastName = "Nusrat"
+        console.log(lastName);//  while use const keywoed it will not change the variable's value
+    </script>
+</body>
+</html>
