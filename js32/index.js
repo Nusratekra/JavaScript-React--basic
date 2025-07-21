@@ -27,3 +27,5 @@ const line = function cat() {
     
 }
 line();
+
+//object is like python's dictionary 
