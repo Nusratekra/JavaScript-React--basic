@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Validation & History API</title>
+</head>
+<body>
+    <h1>Welcome!</h1>
+
+    <!-- Input Validation -->
+    <input id="id1" type="number" min="100" max="300" required />
+    <button onclick="validate()">Validate</button>
+    <p id="demo"></p>
+
+    <!-- History Navigation -->
+    <button onclick="goBack()">🔙 Go Back</button>
+    <button onclick="goForward()">🔜 Go Forward</button>
+    <button onclick="goBackSteps(-2)">⏪ Go Back 2 Steps</button>
+    <button onclick="getHistory()">📖 Check History</button>
+
+    <!-- Navigation Link -->
+    <a href="two.html">➡️ Page Two</a>
+
+       <p> 
+        <button onclick="setLocalStorage('username','Prarona')">Set Local Storage Username</button>
+    </p>
+    <p> 
+        <button onclick="getLocalStorage('username')">Get Local Storage</button>
+    </p>
+    <p> 
+        <button onclick="removeLocalStorage('username')">Remove Local Storage</button>
+    </p>
+    <p> 
+        <button onclick="clearLocalStorage()">Clear Local Storage</button>
+    </p>
+
+    <!-- Fatch API -->
+        <button onclick="getData()">Fatch Data</button>
+        <p id="display"></p>
+        <button onclick="getData1()">Fatch Data</button>
+        <p id="display1"></p>
+
+     <!-- Geolocation API -->
+        <button onclick="getLocation()">Get Location</button>
+        <p id="display2"></p>
+    
+    <script src="index.js"></script>
+</body>
+</html>
+
