@@ -4,3 +4,5 @@ Tailwind customization in input.csss
 @theme {
   --font-roboto: "Roboto", sans-serif; 
 }
+Tailwind official document:
+https://tailwindcss.com/docs/installation/using-vite
